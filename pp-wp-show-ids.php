@@ -1,8 +1,8 @@
 <?php
 /*
   Plugin Name: PP WP Show IDs
-  Plugin URI:
-  Description: Display the IDs of all posts, categories, pages, taxonomies, users, tags, and more.
+  Plugin URI: https://github.com/ppfeufer/pp-wp-show-ids
+  Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
   Version: 1.0.0
   Author: H.-Peter Pfeufer
   Author URI: http://ppfeufer.de
@@ -27,7 +27,7 @@
   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-namespace WP\Plugins\PP_WP_ShowIDs;
+namespace Ppfeufer\Plugin\PpWpShowIDs;
 
 class ShowIDs {
 	public function __construct() {
