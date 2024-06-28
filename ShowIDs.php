@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WordPress Memory Usage
+ * Plugin Name: WP Show IDs
  * Plugin URI: https://github.com/ppfeufer/pp-wp-show-ids
  *  Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
  * Version: 1.0.0
@@ -14,17 +14,20 @@
 namespace Ppfeufer\Plugin\PpWpShowIDs;
 
 // phpcs:disable
+// Define constants
 define(
     constant_name: __NAMESPACE__ . '\PLUGIN_DIR',
     value: plugin_dir_path(file: __FILE__)
 );
 
+const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/pp-wp-show-ids/';
+const PLUGIN_SLUG = 'pp-wp-show-ids';
+const PLUGIN_FILE = __FILE__;
+
+// Load the autoloader
 require_once PLUGIN_DIR . 'Sources/autoloader.php';
 require_once PLUGIN_DIR . 'Sources/Libs/autoload.php';
 // phpcs:enable
 
-/**
- * Start the show
- */
-//new ShowIDs();
+// Initialize the plugin
 (new Main())->init();

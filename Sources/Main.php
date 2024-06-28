@@ -2,6 +2,8 @@
 
 namespace Ppfeufer\Plugin\PpWpShowIDs;
 
+use Ppfeufer\Plugin\PpWpShowIDs\Libs\YahnisElsts\PluginUpdateChecker\v5p4\PucFactory;
+
 /**
  * Main class for the plugin
  *
@@ -15,7 +17,23 @@ class Main {
      * @access public
      */
     public function init(): void {
+        $this->doUpdateCheck();
         $this->loadHooks();
+    }
+
+    /**
+     * Check GitHub for updates
+     *
+     * @return void
+     * @since 1.0.0
+     * @access public
+     */
+    public function doUpdateCheck(): void {
+        PucFactory::buildUpdateChecker(
+            metadataUrl: PLUGIN_GITHUB_URL,
+            fullPath: PLUGIN_DIR . 'ShowIDs.php',
+            slug: PLUGIN_SLUG
+        )->getVcsApi()->enableReleaseAssets();
     }
 
     /**
