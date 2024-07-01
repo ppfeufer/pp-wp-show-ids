@@ -17,9 +17,9 @@ updates:
     target-branch: "master"
     versioning-strategy: increase
     groups:
-      production-dependencies:
-        dependency-type: "production"
+      "NPM Dependencies":
         update-types:
+          - "major"
           - "minor"
           - "patch"
     schedule:
@@ -34,9 +34,9 @@ updates:
     target-branch: "master"
     versioning-strategy: increase
     groups:
-      production-dependencies:
-        dependency-type: "production"
+      "Composer Dependencies":
         update-types:
+          - "major"
           - "minor"
           - "patch"
     schedule:
