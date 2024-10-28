@@ -22,7 +22,9 @@ https://docs.github.com/assets/cb-41128/mw-1440/images/help/writing/alerts-rende
 > Critical content demanding immediate user attention due to potential risks.
 -->
 
-## \[In Development\] – Unreleased
+## Changes in Chronological Order
+
+### \[In Development\] – Unreleased
 
 <!--
 Section Order:
@@ -35,8 +37,14 @@ Section Order:
 ### Security
 -->
 
-## \[1.0.0\] - 2024-06-28
+#### \[1.0.1\] - 2024-10-28
 
-### Changed
+##### Changed
+
+- Tested compatibility to WordPress 6.7
+
+### \[1.0.0\] - 2024-06-28
+
+#### Changed
 
 - Complete rewrite of the plugin.

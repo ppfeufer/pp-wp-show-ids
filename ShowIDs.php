@@ -1,14 +1,28 @@
 <?php
 /**
+ * WP Show IDs
+ *
+ * Display the memory limit and current memory usage in the dashboard and admin footer
+ *
+ * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
+ * @author H. Peter Pfeufer
+ * @copyright 2021 H. Peter Pfeufer
+ * @license GPL-3.0-or-later
+ * @version 1.0.1
+ *
+ * @wordpress-plugin
  * Plugin Name: WP Show IDs
  * Plugin URI: https://github.com/ppfeufer/pp-wp-show-ids
- *  Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
- * Version: 1.0.0
+ * Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
+ * Version: 1.0.1
+ * Requires at least: 6.0
+ * Requires PHP: 8.2
  * Author: H. Peter Pfeufer
- * Author URI: http://ppfeufer.de
- * License: GPLv3
+ * Author URI: https://ppfeufer.de
  * Text Domain: pp-wp-show-ids
  * Domain Path: /l10n
+ * License: GPLv3
+ * License URI: https://github.com/ppfeufer/pp-wp-show-ids/blob/master/LICENSE
  */
 
 namespace Ppfeufer\Plugin\PpWpShowIDs;

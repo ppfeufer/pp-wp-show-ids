@@ -5,6 +5,7 @@
 
 plugin_name = PP WP Show IDs
 plugin_slug = pp-wp-show-ids
+plugin_file = ShowIDs.php
 
 # Help message for the Makefile
 .PHONY: help
