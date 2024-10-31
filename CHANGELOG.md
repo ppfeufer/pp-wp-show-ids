@@ -29,13 +29,17 @@ https://docs.github.com/assets/cb-41128/mw-1440/images/help/writing/alerts-rende
 <!--
 Section Order:
 
-### Added
-### Fixed
-### Changed
-### Deprecated
-### Removed
-### Security
+#### Added
+#### Fixed
+#### Changed
+#### Deprecated
+#### Removed
+#### Security
 -->
+
+#### Added
+
+- New translatable string
 
 #### \[1.0.1\] - 2024-10-28
 
