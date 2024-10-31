@@ -180,7 +180,7 @@ class Main {
      * @access public
      */
     public function addColumn(array $cols): array {
-        $cols['pp-wp-show-ids'] = 'ID';
+        $cols['pp-wp-show-ids'] = __('ID', 'pp-wp-show-ids');
 
         return $cols;
     }
