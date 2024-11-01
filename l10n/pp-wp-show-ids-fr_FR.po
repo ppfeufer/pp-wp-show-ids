@@ -1,0 +1,46 @@
+# Copyright (C) 2024 H. Peter Pfeufer
+# This file is distributed under the GPLv3.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Show IDs 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pp-wp-show-ids\n"
+"POT-Creation-Date: 2024-10-31T18:57:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: pp-wp-show-ids\n"
+
+#. Plugin Name of the plugin
+#: ShowIDs.php
+msgid "WP Show IDs"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: ShowIDs.php
+msgid "https://github.com/ppfeufer/pp-wp-show-ids"
+msgstr ""
+
+#. Description of the plugin
+#: ShowIDs.php
+msgid "Display the IDs of posts, categories, pages, taxonomies, users, tags, and more."
+msgstr ""
+
+#. Author of the plugin
+#: ShowIDs.php
+msgid "H. Peter Pfeufer"
+msgstr ""
+
+#. Author URI of the plugin
+#: ShowIDs.php
+msgid "https://ppfeufer.de"
+msgstr ""
+
+#: Sources/Main.php:183
+msgid "ID"
+msgstr ""
