@@ -2,7 +2,7 @@
 
 namespace Ppfeufer\Plugin\PpWpShowIDs;
 
-use Ppfeufer\Plugin\PpWpShowIDs\Libs\YahnisElsts\PluginUpdateChecker\v5p4\PucFactory;
+use Ppfeufer\Plugin\PpWpShowIDs\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
 
 /**
  * Main class for the plugin
