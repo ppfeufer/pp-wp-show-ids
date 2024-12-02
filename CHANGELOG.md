@@ -24,7 +24,7 @@ https://docs.github.com/assets/cb-41128/mw-1440/images/help/writing/alerts-rende
 
 ## Changes in Chronological Order
 
-### \[In Development\] – Unreleased
+### [In Development] – Unreleased
 
 <!--
 Section Order:
@@ -41,13 +41,13 @@ Section Order:
 
 - New translatable string
 
-#### \[1.0.1\] - 2024-10-28
+#### [1.0.1] - 2024-10-28
 
 ##### Changed
 
 - Tested compatibility to WordPress 6.7
 
-### \[1.0.0\] - 2024-06-28
+### [1.0.0] - 2024-06-28
 
 #### Changed
 
