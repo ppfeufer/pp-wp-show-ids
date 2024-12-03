@@ -29,19 +29,28 @@ namespace Ppfeufer\Plugin\PpWpShowIDs;
 
 // phpcs:disable
 // Define constants
+// Plugin directory path
 define(
-    constant_name: __NAMESPACE__ . '\PLUGIN_DIR',
+    constant_name: __NAMESPACE__ . '\PLUGIN_DIR_PATH',
     value: plugin_dir_path(file: __FILE__)
 );
 
+// Plugin directory relative path
+define(
+    constant_name: __NAMESPACE__ . '\PLUGIN_REL_PATH',
+    value: dirname(plugin_basename(__FILE__))
+);
+
+// Plugin GitHub URL
 const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/pp-wp-show-ids/';
+
+// Plugin slug
 const PLUGIN_SLUG = 'pp-wp-show-ids';
-const PLUGIN_FILE = __FILE__;
 
 // Load the autoloader
-require_once PLUGIN_DIR . 'Sources/autoloader.php';
-require_once PLUGIN_DIR . 'Sources/Libs/autoload.php';
+require_once PLUGIN_DIR_PATH . 'Sources/autoloader.php';
+require_once PLUGIN_DIR_PATH . 'Sources/Libs/autoload.php';
 // phpcs:enable
 
 // Initialize the plugin
-(new Main())->init();
+new Main();

@@ -3,15 +3,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Show IDs 1.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pp-wp-show-ids\n"
+"Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wp-show-ids/issues\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-31T18:57:00+00:00\n"
+"POT-Creation-Date: 2024-12-03T09:25:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: pp-wp-show-ids\n"
 
 #. Plugin Name of the plugin
@@ -39,6 +39,6 @@ msgstr ""
 msgid "https://ppfeufer.de"
 msgstr ""
 
-#: Sources/Main.php:183
+#: Sources/Main.php:203
 msgid "ID"
 msgstr ""
