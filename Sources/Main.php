@@ -11,6 +11,16 @@ use Ppfeufer\Plugin\PpWpShowIDs\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFac
  */
 class Main {
     /**
+     * Main constructor
+     *
+     * @return void
+     * @access public
+     */
+    public function __construct() {
+        $this->init();
+    }
+
+    /**
      * Initialize the class
      *
      * @return void
@@ -25,13 +35,12 @@ class Main {
      * Check GitHub for updates
      *
      * @return void
-     * @since 1.0.0
      * @access public
      */
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
             metadataUrl: PLUGIN_GITHUB_URL,
-            fullPath: PLUGIN_DIR . 'ShowIDs.php',
+            fullPath: PLUGIN_DIR_PATH . 'ShowIDs.php',
             slug: PLUGIN_SLUG
         )->getVcsApi()->enableReleaseAssets();
     }
@@ -43,75 +52,85 @@ class Main {
      * @access public
      */
     public function loadHooks(): void {
-        // Add CSS
-        add_action(hook_name: 'admin_head', callback: [$this, 'addCss']);
+        // Load the text domain
+        add_action(hook_name: 'init', callback: static function () {
+            load_plugin_textdomain(
+                domain: PLUGIN_SLUG,
+                plugin_rel_path: PLUGIN_REL_PATH . '/l10n/'
+            );
+        });
 
-        // For Post Management
-        add_filter(hook_name: 'manage_posts_columns', callback: [$this, 'addColumn']);
-        add_action(
-            hook_name: 'manage_posts_custom_column',
-            callback: [$this, 'addValue'],
-            accepted_args: 2
-        );
+        if (is_admin()) {
+            // Add CSS
+            add_action(hook_name: 'admin_head', callback: [$this, 'addCss']);
 
-        // For Page Management
-        add_filter(hook_name: 'manage_pages_columns', callback: [$this, 'addColumn']);
-        add_action(
-            hook_name: 'manage_pages_custom_column',
-            callback: [$this, 'addValue'],
-            accepted_args: 2
-        );
+            // For Post Management
+            add_filter(hook_name: 'manage_posts_columns', callback: [$this, 'addColumn']);
+            add_action(
+                hook_name: 'manage_posts_custom_column',
+                callback: [$this, 'addValue'],
+                accepted_args: 2
+            );
 
-        // For Media Management
-        add_filter(hook_name: 'manage_media_columns', callback: [$this, 'addColumn']);
-        add_action(
-            hook_name: 'manage_media_custom_column',
-            callback: [$this, 'addValue'],
-            accepted_args: 2
-        );
+            // For Page Management
+            add_filter(hook_name: 'manage_pages_columns', callback: [$this, 'addColumn']);
+            add_action(
+                hook_name: 'manage_pages_custom_column',
+                callback: [$this, 'addValue'],
+                accepted_args: 2
+            );
 
-        // For Link Management
-        add_filter(
-            hook_name: 'manage_link-manager_columns',
-            callback: [$this, 'addColumn']
-        );
-        add_action(
-            hook_name: 'manage_link_custom_column',
-            callback: [$this, 'addValue'],
-            accepted_args: 2
-        );
+            // For Media Management
+            add_filter(hook_name: 'manage_media_columns', callback: [$this, 'addColumn']);
+            add_action(
+                hook_name: 'manage_media_custom_column',
+                callback: [$this, 'addValue'],
+                accepted_args: 2
+            );
 
-        // For Category Management
-        add_action(
-            hook_name: 'manage_edit-link-categories_columns',
-            callback: [$this, 'addColumn']
-        );
-        add_filter(
-            hook_name: 'manage_link_categories_custom_column',
-            callback: [$this, 'addReturnValue'],
-            accepted_args: 3
-        );
+            // For Link Management
+            add_filter(
+                hook_name: 'manage_link-manager_columns',
+                callback: [$this, 'addColumn']
+            );
+            add_action(
+                hook_name: 'manage_link_custom_column',
+                callback: [$this, 'addValue'],
+                accepted_args: 2
+            );
 
-        // For User Management
-        add_action(hook_name: 'manage_users_columns', callback: [$this, 'addColumn']);
-        add_filter(
-            hook_name: 'manage_users_custom_column',
-            callback: [$this, 'addReturnValue'],
-            accepted_args: 3
-        );
+            // For Category Management
+            add_action(
+                hook_name: 'manage_edit-link-categories_columns',
+                callback: [$this, 'addColumn']
+            );
+            add_filter(
+                hook_name: 'manage_link_categories_custom_column',
+                callback: [$this, 'addReturnValue'],
+                accepted_args: 3
+            );
 
-        // For Comment Management
-        add_action(
-            hook_name: 'manage_edit-comments_columns',
-            callback: [$this, 'addColumn']
-        );
-        add_action(
-            hook_name: 'manage_comments_custom_column',
-            callback: [$this, 'addValue'],
-            accepted_args: 2
-        );
+            // For User Management
+            add_action(hook_name: 'manage_users_columns', callback: [$this, 'addColumn']);
+            add_filter(
+                hook_name: 'manage_users_custom_column',
+                callback: [$this, 'addReturnValue'],
+                accepted_args: 3
+            );
 
-        add_action(hook_name: 'admin_init', callback: [$this, 'customObjects']);
+            // For Comment Management
+            add_action(
+                hook_name: 'manage_edit-comments_columns',
+                callback: [$this, 'addColumn']
+            );
+            add_action(
+                hook_name: 'manage_comments_custom_column',
+                callback: [$this, 'addValue'],
+                accepted_args: 2
+            );
+
+            add_action(hook_name: 'admin_init', callback: [$this, 'customObjects']);
+        }
     }
 
     /**
@@ -161,7 +180,8 @@ class Main {
     public function addCss(): void {
         ?>
         <style>
-            #pp-wp-show-ids {
+            .manage-column.column-pp-wp-show-ids {
+                text-align: right;
                 width: 50px;
             }
 
