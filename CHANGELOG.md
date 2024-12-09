@@ -37,6 +37,8 @@ Section Order:
 #### Security
 -->
 
+#### [1.1.0] - 2024-12-09
+
 #### Added
 
 - New translatable string
