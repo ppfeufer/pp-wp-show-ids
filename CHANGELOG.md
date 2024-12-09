@@ -41,6 +41,10 @@ Section Order:
 
 - New translatable string
 
+### Changed
+
+- Code optimized
+
 #### [1.0.1] - 2024-10-28
 
 ##### Changed
