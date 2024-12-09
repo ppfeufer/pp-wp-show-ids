@@ -43,7 +43,7 @@ Section Order:
 
 - New translatable string
 
-### Changed
+#### Changed
 
 - Code optimized
 
