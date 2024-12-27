@@ -8,13 +8,13 @@
  * @author H. Peter Pfeufer
  * @copyright 2021 H. Peter Pfeufer
  * @license GPL-3.0-or-later
- * @version 1.1.0
+ * @version 1.2.0
  *
  * @wordpress-plugin
  * Plugin Name: WP Show IDs
  * Plugin URI: https://github.com/ppfeufer/pp-wp-show-ids
  * Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Requires at least: 6.0
  * Requires PHP: 8.2
  * Author: H. Peter Pfeufer

@@ -37,6 +37,12 @@ Section Order:
 #### Security
 -->
 
+#### [1.2.0] - 2024-12-27
+
+### Changed
+
+- Code refactoring
+
 #### [1.1.0] - 2024-12-09
 
 #### Added
