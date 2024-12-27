@@ -40,7 +40,7 @@ class Main {
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
             metadataUrl: PLUGIN_GITHUB_URL,
-            fullPath: PLUGIN_DIR_PATH . 'ShowIDs.php',
+            fullPath: PLUGIN_DIR_PATH . '/ShowIDs.php',
             slug: PLUGIN_SLUG
         )->getVcsApi()->enableReleaseAssets();
     }
@@ -56,7 +56,7 @@ class Main {
         add_action(hook_name: 'init', callback: static function () {
             load_plugin_textdomain(
                 domain: PLUGIN_SLUG,
-                plugin_rel_path: PLUGIN_REL_PATH . '/l10n/'
+                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
             );
         });
 

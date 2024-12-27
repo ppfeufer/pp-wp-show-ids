@@ -28,29 +28,62 @@
 namespace Ppfeufer\Plugin\PpWpShowIDs;
 
 // phpcs:disable
-// Define constants
-// Plugin directory path
+
+/**
+ * Plugin basename
+ */
 define(
-    constant_name: __NAMESPACE__ . '\PLUGIN_DIR_PATH',
-    value: plugin_dir_path(file: __FILE__)
+    constant_name: __NAMESPACE__ . '\PLUGIN_BASENAME',
+    value: plugin_basename(file: __FILE__)
 );
 
-// Plugin directory relative path
+/**
+ * Plugin directory path relative to wp-content/plugins (without trailing slash)
+ */
 define(
     constant_name: __NAMESPACE__ . '\PLUGIN_REL_PATH',
-    value: dirname(plugin_basename(__FILE__))
+    value: dirname(PLUGIN_BASENAME)
 );
 
-// Plugin GitHub URL
-const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/pp-wp-show-ids/';
+/**
+ * Plugin directory URL (with trailing slash)
+ */
+define(
+    constant_name: __NAMESPACE__ . '\PLUGIN_DIR_URL',
+    value: plugin_dir_url(file: __FILE__)
+);
 
-// Plugin slug
+/**
+ * Plugin directory path (without trailing slash)
+ */
+const PLUGIN_DIR_PATH = __DIR__;
+
+/**
+ * Plugin source path (without trailing slash)
+ */
+const PLUGIN_SOURCE_PATH = PLUGIN_DIR_PATH . '/Sources';
+
+/**
+ * Plugin library path (without trailing slash)
+ */
+const PLUGIN_LIBRARY_PATH = PLUGIN_SOURCE_PATH . '/Libs';
+
+/**
+ * Plugin slug
+ */
 const PLUGIN_SLUG = 'pp-wp-show-ids';
 
-// Load the autoloader
-require_once PLUGIN_DIR_PATH . 'Sources/autoloader.php';
-require_once PLUGIN_DIR_PATH . 'Sources/Libs/autoload.php';
+/**
+ * Plugin GitHub URL
+ */
+const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/' . PLUGIN_SLUG . '/';
+
+// Include the plugin autoloader
+require_once PLUGIN_SOURCE_PATH . '/autoload.php';
+
+// Include the library autoloader
+require_once PLUGIN_LIBRARY_PATH . '/autoload.php';
 // phpcs:enable
 
-// Initialize the plugin
+// Load the plugin's main class.
 new Main();
