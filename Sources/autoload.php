@@ -7,7 +7,7 @@ use RuntimeException;
 
 // Register the autoloader.
 // phpcs:disable
-spl_autoload_register(callback: '\Ppfeufer\Plugin\PpWpShowIDs\autoload');
+spl_autoload_register(callback: '\\' . __NAMESPACE__ . '\autoload');
 // phpcs:enable
 
 /**
