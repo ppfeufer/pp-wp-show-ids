@@ -6,17 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Show IDs 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wp-show-ids/issues\n"
-"POT-Creation-Date: 2024-12-09T04:02:22+00:00\n"
+"POT-Creation-Date: 2025-06-05T08:06:22+00:00\n"
 "PO-Revision-Date: 2024-12-03 08:52+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
-"Language-Team: Romanian <https://weblate.ppfeufer.de/projects/wordpress-"
-"plugins/wp-show-ids/ro/>\n"
+"Language-Team: Romanian <https://weblate.ppfeufer.de/projects/wordpress-plugins/wp-show-ids/ro/>\n"
 "Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.8.4\n"
 "X-Domain: pp-wp-show-ids\n"
 
@@ -32,9 +30,7 @@ msgstr ""
 
 #. Description of the plugin
 #: ShowIDs.php
-msgid ""
-"Display the IDs of posts, categories, pages, taxonomies, users, tags, and "
-"more."
+msgid "Display the IDs of posts, categories, pages, taxonomies, users, tags, and more."
 msgstr ""
 
 #. Author of the plugin
