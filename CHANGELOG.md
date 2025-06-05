@@ -37,13 +37,19 @@ Section Order:
 #### Security
 -->
 
-#### [1.2.0] - 2024-12-27
+### [1.2.1] - 2025-06-05
 
-### Changed
+#### Changed
+
+- Translations updated
+
+### [1.2.0] - 2024-12-27
+
+#### Changed
 
 - Code refactoring
 
-#### [1.1.0] - 2024-12-09
+### [1.1.0] - 2024-12-09
 
 #### Added
 
@@ -53,7 +59,7 @@ Section Order:
 
 - Code optimized
 
-#### [1.0.1] - 2024-10-28
+### [1.0.1] - 2024-10-28
 
 ##### Changed
 
