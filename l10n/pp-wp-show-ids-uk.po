@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: WP Show IDs 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wp-show-ids/issues\n"
 "POT-Creation-Date: 2025-06-05T08:06:22+00:00\n"
-"PO-Revision-Date: 2025-04-13 12:24+0000\n"
+"PO-Revision-Date: 2025-10-20 05:35+0000\n"
 "Last-Translator: s0k0l -_- <salarysalo@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.ppfeufer.de/projects/wordpress-plugins/wp-show-ids/uk/>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.13.3\n"
 "X-Domain: pp-wp-show-ids\n"
 
 #. Plugin Name of the plugin
@@ -32,7 +32,7 @@ msgstr "https://github.com/ppfeufer/pp-wp-show-ids"
 #. Description of the plugin
 #: ShowIDs.php
 msgid "Display the IDs of posts, categories, pages, taxonomies, users, tags, and more."
-msgstr "Показати ідентифікатори постів, категорій, сторінок, таксономії, користувачів, теги тощо."
+msgstr "Показати ідентифікатори постів, категорій, сторінки, таксономії, користувачів, теги тощо."
 
 #. Author of the plugin
 #: ShowIDs.php
