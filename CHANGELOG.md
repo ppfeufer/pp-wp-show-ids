@@ -37,6 +37,13 @@ Section Order:
 #### Security
 -->
 
+### [1.2.2] - 2026-01-06
+
+#### Changed
+
+- Translations updated
+- Tested compatibility with WordPress 7
+
 ### [1.2.1] - 2025-06-05
 
 #### Changed
