@@ -33,6 +33,12 @@ jobs:
 #        with:
 #          composer-options: install --no-dev --no-interaction --no-progress --no-suggest --optimize-autoloader --classmap-authoritative
 
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          check-latest: true
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
