@@ -1,5 +1,6 @@
 {
-    "name": "pp-wp-show-ids",
+    "name": "@ppfeufer/pp-wp-show-ids",
+    "version": "1.2.2",
     "type": "module",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
