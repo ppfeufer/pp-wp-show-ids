@@ -2,13 +2,13 @@
 # This file is distributed under the GPLv3.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
 # Peter Pfeufer <info@ppfeufer.de>, 2024.
-# s0k0l -_- <salarysalo@gmail.com>, 2025.
+# s0k0l -_- <salarysalo@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Show IDs 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wp-show-ids/issues\n"
-"POT-Creation-Date: 2026-01-06T10:47:29+00:00\n"
-"PO-Revision-Date: 2025-10-20 05:35+0000\n"
+"POT-Creation-Date: 2026-10-07T10:44:03+00:00\n"
+"PO-Revision-Date: 2026-09-27 15:14+0000\n"
 "Last-Translator: s0k0l -_- <salarysalo@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.ppfeufer.de/projects/wordpress-plugins/wp-show-ids/uk/>\n"
 "Language: uk\n"
@@ -16,34 +16,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13.3\n"
+"X-Generator: Weblate 2026.9.1\n"
 "X-Domain: pp-wp-show-ids\n"
 
 #. Plugin Name of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:14
 msgid "WP Show IDs"
 msgstr "Показати ідентифікатори Вордпресу"
 
 #. Plugin URI of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:15
 msgid "https://github.com/ppfeufer/pp-wp-show-ids"
 msgstr "https://github.com/ppfeufer/pp-wp-show-ids"
 
 #. Description of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:16
 msgid "Display the IDs of posts, categories, pages, taxonomies, users, tags, and more."
 msgstr "Показати ідентифікатори постів, категорій, сторінки, таксономії, користувачів, теги тощо."
 
 #. Author of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:20
 msgid "H. Peter Pfeufer"
 msgstr "H. Peter Pfeufer"
 
 #. Author URI of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:21
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
 
 #: Sources/Main.php:203
 msgid "ID"
-msgstr "Ідентифікатор"
+msgstr "Айді"
