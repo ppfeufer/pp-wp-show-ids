@@ -16,7 +16,7 @@
  * Description: Display the IDs of posts, categories, pages, taxonomies, users, tags, and more.
  * Version: 1.2.2
  * Requires at least: 6.0
- * Requires PHP: 8.2
+ * Requires PHP: 8.4
  * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
  * Text Domain: pp-wp-show-ids
