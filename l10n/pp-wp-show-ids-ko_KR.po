@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Show IDs 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wp-show-ids/issues\n"
-"POT-Creation-Date: 2026-01-06T10:47:29+00:00\n"
+"POT-Creation-Date: 2026-10-07T10:44:03+00:00\n"
 "PO-Revision-Date: 2024-12-03 08:52+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
 "Language-Team: Korean <https://weblate.ppfeufer.de/projects/wordpress-plugins/wp-show-ids/ko/>\n"
@@ -19,27 +19,27 @@ msgstr ""
 "X-Domain: pp-wp-show-ids\n"
 
 #. Plugin Name of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:14
 msgid "WP Show IDs"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:15
 msgid "https://github.com/ppfeufer/pp-wp-show-ids"
 msgstr ""
 
 #. Description of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:16
 msgid "Display the IDs of posts, categories, pages, taxonomies, users, tags, and more."
 msgstr ""
 
 #. Author of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:20
 msgid "H. Peter Pfeufer"
 msgstr "H. Peter Pfeufer"
 
 #. Author URI of the plugin
-#: ShowIDs.php
+#: ShowIDs.php:21
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
 
